@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+}
+
+.content{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 16%);
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0500f5;
+    border-radius: 10px 0 0 10px;
+}
+
+.login-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+    padding: 0 3rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.back button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 16px 0 16px 16px;
+    height: 32px;
+    color: #0500f5;
+}
+
+.login-header h2{
+    font-size: 28pt;
+    margin-bottom: 10px;
+    line-height: 2.5rem;
+}
+
+.login-header h5{
+    font-size: 14pt;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+
+.login-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.login-form input{
+    margin-bottom: 42px;
+    border: none;
+    border-bottom: solid 1px #0500f5;
+    outline: none;
+    width: 100%;
+    font-size: 12pt;
+}
+
+.login-form input::placeholder{
+    color: #ccc;
+    font-size: 12pt;
+}
+
+
+.login-form .send-button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #0500f5;
+    color:#fff;
+    font-size: 12pt;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 16%);
+    margin-bottom: 42px;
+    transition: .3s ease; 
+}
+
+.login-form .send-button:hover {
+    box-shadow: none;
+    background: #0400e1;
+    color: #e5e5e5;
+}
+
+.forgot-password{
+    background: none;
+    border: none;
+    font-size: 12pt;
+    color: #0500f5;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1320px) {
+    .logo img{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 1169px) {
+    .content {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 783px) {
+   .logo img {
+    width: 98px;
+   }
+
+    .login-header h2 {
+        font-size: 18pt;
+        line-height: 2rem;
+    }
+
+    .login-header h5 {
+        font-size: 12pt;
+        margin-bottom: 50px;
+    }
+    
+    .login-form input {
+        margin-bottom: 20px;
+    }
+    
+    .login-form input::placeholder {
+        font-size: 10pt;
+    }
+
+    .login-form .send-button {
+        font-size: 10pt;
+        margin-bottom: 20px;
+    }
+
+    .forgot-password {
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e5e5e5;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgb(0 0 0 / 16%);
+    }
+
+    .logo {
+        height: 25%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .logo img{
+        width: 170px;
+    }
+
+    .login-container {
+        width: 100%;
+        height: 75%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .login-form input {
+        margin-bottom: 40px;
+    }
+
+    .login-header h5 {
+        margin-bottom: 70px;
+    }
+}
+
+
+
+
