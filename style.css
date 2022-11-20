@@ -172,7 +172,6 @@ body{
         align-items: center;
         background: #e5e5e5;
         flex-direction: column;
-        overflow: hidden;
     }
 
     .content{
