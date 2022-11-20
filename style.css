@@ -172,6 +172,7 @@ body{
         align-items: center;
         background: #e5e5e5;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .content{
@@ -191,6 +192,7 @@ body{
 
     .logo img{
         width: 170px;
+        margin: 10px 0;
     }
 
     .login-container {
@@ -210,6 +212,9 @@ body{
 }
 
 @media only screen and (max-width: 379px) {
+    .logo img{
+        margin: 10px 0;
+    }
     .login-container {
         height: auto;
         flex: 1;
